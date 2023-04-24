@@ -33,7 +33,7 @@ A simple usage example is given below.  Note that, before calling `app_start()` 
 Throughout the `cell` API, in functions which can take more than a few seconds to complete, you will find a `keepGoingCallback()` parameter.  This parameter is intended for situations where the application needs control of the timeout of the API call or needs to feed a watchdog timer.  The callback will be called approximately once a second while the API function is operating and, if it returns `false`, the API function will be terminated.  Set the parameter to `NULL` if no specific timeout is required, or no watchdog needs to be fed.
 
 ```
-#include "ubxlb.h"
+#include "ubxlib.h"
 #include "u_cfg_app_platform_specific.h"
 
 // The entry point: before this is called the system
